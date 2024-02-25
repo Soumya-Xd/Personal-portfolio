@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soumya's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <style>
+        /* Define the animation */
+        .slideInLeft {
+            animation: slideInLeft 1s ease;
+        }
+
+        /* Define the keyframes for the animation */
+        @keyframes slideInLeft {
+            0% {
+                opacity: 0;
+                transform: translateX(-100%);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+    </style>
+
+    <head>
+
+    </head>
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/programming-languages.gif" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header" class="animated-text">Home</a></li>
+                    <li><a href="#about" class="animated-text">About</a></li>
+                    <li><a href="#services" class="animated-text">Services</a></li>
+                    <li><a href="#portfolio" class="animated-text">Portfolio</a></li>
+                    <li><a href="#contact" class="animated-text">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1 class="header-line">
+                    Hi, I'm Soumya<br>
+                    and I'm a passionate<br>
+                    <span id="element"></span>
+                    <div id="cursor"></div>
+                </h1>
+            </div>
+
+        </div>
+    </div>
+    <!-- -----------about---------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/soumya-main.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title animated-text">About Me</h1>
+                    <p class="animated-text">Dynamic and results-driven software engineer with a Bachelor's degree in
+                        Artificial Intelligence and Machine Learning from Brainware University, graduating in 2026.
+                        Proficient in a wide range of technologies including Django, Bootstrap, React.js, HTML, CSS,
+                        JavaScript, and SQL. Experienced in developing innovative projects leveraging AI/ML concepts and
+                        frameworks. Adept at problem-solving and collaborating with cross-functional teams to deliver
+                        high-quality software solutions. Passionate about continuous learning and staying updated with
+                        emerging technologies in the field of software development.
+
+                        Skills:
+
+                        Proficient in Django, Bootstrap, React.js, HTML, CSS, JavaScript, SQL
+                        Strong understanding of Artificial Intelligence and Machine Learning concepts
+                        Experience in developing and deploying web applications using Django and React.js
+                        Familiarity with front-end and back-end development frameworks and methodologies
+                        Excellent problem-solving and analytical skills
+                        Ability to work effectively in a collaborative team environment
+                        Strong communication and interpersonal skills</p>
+
+                    <div class="tab-titles animated-text">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Python Developer</span><br>Develop web application with Python</li>
+                            <li><span>Web Developer</span><br>Web developing </li>
+                            <li><span>Ml Developer</span><br>Building innovative Ml projects</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2024 - Current</span><br>Pursuing B.tech in Aiml</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020</span><br>Basic of web Designing from youtube</li>
+                            <li><span>2022</span><br>B.Tech from Brainware University</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------services---------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title animated-text">My Services</h1>
+            <div class="services-list animated-text">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2 class="animated-text">Web Design</h2>
+                    <p class="animated-text">Profficient in Html,css and javascript as well as Profficient in Django and
+                        expert to creating web frame and web application </p>
+                    <a href="#" class="animated-text">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2 class="animated-text">Machine Learning</h2>
+                    <p class="animated-text">Expert in ml algo and creating several project on ml as well dl model </p>
+                    <a href="#" class="animated-text">Learn more</a>
+                </div>
+                <div>
+                    <i class="fab fa-app-store"></i>
+                    <h2 class="animated-text">Python Developing</h2>
+                    <p class="animated-text">Top hard developer in Python ,easy to handel numpy,pandas and
+                        flask,django.. etc</p>
+                    <a href="#" class="animated-text">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------portfolio------------ -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title animated-text">My Work</h1>
+            <div class="work-list animated-text">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3 class="animated-text">Social Media App</h3>
+                        <p class="animated-text">The app connects you to the talented people around the world. Download
+                            it from play store.</p>
+                        <a href="#" class="animated-text"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3 class="animated-text">Music App</h3>
+                        <p class="animated-text">The app connects you to the talented people around the world. Download
+                            it from play store.</p>
+                        <a href="#" class="animated-text"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3 class="animated-text">Online Shopping App</h3>
+                        <p class="animated-text">The app connects you to the talented people around the world. Download
+                            it from play store.</p>
+                        <a href="#" class="animated-text"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn animated-text">See more</a>
+        </div>
+    </div>
+    <!-- ----------contact------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left animated-text">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>Soumyasingharoy06@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i> 6296520890</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                        <a href=""><i class="fab fa-twitter-square"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/cv_my.pdf" download class="btn btn2 animated-text">Download CV</a>
+                </div>
+                <div class="contact-right animated-text">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required class="animated-text">
+                        <input type="email" name="Email" placeholder="Your Email" required class="animated-text">
+                        <textarea name="Message" rows="6" placeholder="Your Message" class="animated-text"></textarea>
+                        <button type="submit" class="btn btn2 animated-text">Submit</button>
+                    </form>
+                    <span id="msg" class="animated-text"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Add animations using JavaScript
+        const animatedElements = document.querySelectorAll('.animated-text');
+
+        // Function to add animation class to elements sequentially
+        function addAnimation() {
+            let delay = 0;
+            animatedElements.forEach(element => {
+                element.style.animationDelay = delay + 's';
+                element.classList.add('slideInLeft');
+                delay += 0.3; // Adjust the delay between each word
+            });
+        }
+
+        // Call the function after the page has loaded
+        window.onload = addAnimation;
+    </script>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwiVQYIVuIQ3S5mvavSw32nZ3BTmxoLIiXviKEWt42qfCz78e0AYS_-WSo7buezO1FXAA/exec' // add your own app script link here
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Python Developer', 'Ml Developer','Video Editor'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
